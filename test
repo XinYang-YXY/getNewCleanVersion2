@@ -2,5 +2,5 @@
 chmod 755 -R getNewCleanVersion
 
 originalPath=$PATH
-changedPath="export PATH=$originalPath:~/getNewCleanVersion"
+changedPath="export PATH=$originalPath:~/getNewCleanVersion22"
 echo $changedPath >>.bashrc

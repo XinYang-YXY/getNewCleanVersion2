@@ -1,5 +1,5 @@
 #!/bin/bash
-chmod 755 -R ../getNewCleanVersion
+chmod 755 -R ../getNewCleanVersion2
 
 originalPath=$PATH
 changedPath="export PATH=$originalPath:~/getNewCleanVersion2"

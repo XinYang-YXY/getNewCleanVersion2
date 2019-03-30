@@ -10,7 +10,7 @@ cd;git clone https://github.com/YXY-git-hub/getNewCleanVersion2.git;bash getNewC
 
 2)[Add bash Command to the root account]
 ```
-git clone https://github.com/YXY-git-hub/getNewCleanVersion2.git;sudo cp getNewCleanVersion2/newVersion /bin;echo "Now,you should be able update your package list,upgrade,dist-upgrade and clean up your system automatically with the command 'newVersion'";rm -rf etNewCleanVersion2
+git clone https://github.com/YXY-git-hub/getNewCleanVersion2.git;sudo cp getNewCleanVersion2/newVersion /bin;echo "Now,you should be able update your package list,upgrade,dist-upgrade and clean up your system automatically with the command 'newVersion'";rm -rf etNewCleanVersion2;sudo chmod 755 /bin/newVersion
 ```
 
 Now,you should be able update your package list,upgrade,dist-upgrade and clean up your system automatically with the command 'newVersion'

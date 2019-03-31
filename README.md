@@ -9,7 +9,7 @@ cd;git clone https://github.com/YXY-git-hub/getNewCleanVersion2.git;bash getNewC
 <pre>
   [Removing newVersion]
   ```
-  cd;restorePath;rm -rf getNewCleanVersion2;
+  cd;rm -rf getNewCleanVersion2;
   ```
 </pre>
 2)[Add bash Command to the root account]

@@ -4,7 +4,7 @@ Copy and paste one of the 2 line to your bash terminaland press Enter
 
 1)[Add bash Command to your current user account]
 ```
-cd;git clone https://github.com/YXY-git-hub/getNewCleanVersion2.git;bash getNewCleanVersion2/settingUpEnv;cd;bash installF;exec bash;
+cd;git clone https://github.com/YXY-git-hub/getNewCleanVersion2.git;bash getNewCleanVersion2/settingUpEnv;cd;installF;exec bash;
 ```
 <pre>
   [Removing newVersion]

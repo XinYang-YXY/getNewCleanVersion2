@@ -1,4 +1,0 @@
-#!/bin/bash
-
-rm ~/.bashrc
-mv ~/getNewCleanVersion2/.bashrc ~

@@ -14,7 +14,7 @@ cd;git clone https://github.com/YXY-git-hub/getNewCleanVersion2.git;bash getNewC
 </pre>
 2)[Add bash Command to the root account]
 ```
-git clone https://github.com/YXY-git-hub/getNewCleanVersion2.git;sudo cp getNewCleanVersion2/{newVersion,uninstallF} /bin;sudo chmod 755 /bin/newVersion;bash installF;rm -rf getNewCleanVersion2;
+git clone https://github.com/YXY-git-hub/getNewCleanVersion2.git;sudo cp getNewCleanVersion2/{newVersion,uninstallF} /bin;sudo chmod 755 /bin/newVersion;bash getNewCleanVersion2/installF;rm -rf getNewCleanVersion2;
 ```
 <pre>
   [Removing newVersion]

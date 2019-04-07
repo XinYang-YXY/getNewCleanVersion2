@@ -1,8 +1,8 @@
-sudo apt-get update
+sudo apt-get update --fix-missing
 echo "*********************************Finished Updating**********************************"
-sudo apt-get -y upgrade
+sudo apt-get -y upgrade --fix-missing
 echo "*********************************Finished Upgrading*********************************"
-sudo apt-get -y dist-upgrade
+sudo apt-get -y dist-upgrade --fix-missing
 echo "*******************************Finished Dist-upgrading******************************"
 sudo apt-get -y autoremove 
 sudo apt-get -y autoclean

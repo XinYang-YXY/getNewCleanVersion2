@@ -1,10 +1,65 @@
-sudo apt-get update --fix-missing
-echo "*********************************Finished Updating**********************************"
-sudo apt-get -y upgrade --fix-missing
-echo "*********************************Finished Upgrading*********************************"
-sudo apt-get -y dist-upgrade --fix-missing
-echo "*******************************Finished Dist-upgrading******************************"
-sudo apt-get -y autoremove 
-sudo apt-get -y autoclean
-echo "*********************************Finished removing**********************************"
-echo "**************************************DONE******************************************"
+#!/bin/bash
+
+set -e
+
+update() { 
+echo -e "Fetching package list"
+sudo apt update
+echo -e "*****Finished fetching package list*****"
+}
+cleanUp(){
+echo "Cleaning the system"
+sudo apt -y autoclean
+echo "*****Fiinished cleaning the system*****"
+}
+upgrade(){
+echo "Start upgrading the system"
+sudo apt -y dist-upgrade --fix-missing
+echo "*****Fishined upgrading the system*****"
+}
+dUpgrade(){
+echo "Start distro upgrading the system"
+sudo apt -y upgrade --fix-missing
+echo "*****Fishinged distro upgrading the system*****"
+}
+Done(){
+echo "*****Done*****"
+}
+
+echo "newVersion -- Debian/Ubuntu Tool (Version 2)"
+
+if [ "$1" == "-u" ]; then
+    update
+    Done
+    exit
+fi
+if [ "$1" == "-c" ]; then
+    cleanUp
+    Done
+    exit
+fi
+if [ "$1" == "-U" ]; then
+    upgrade
+    Done
+    exit
+fi
+if [ "$1" == "-dU" ]; then
+    dUpgrade
+    Done
+    exit
+fi
+if [ -n "$1" ]; then
+   echo "*****Please enter a valid flag*****"
+   echo -e "	-u update"
+   echo -e "	-c clean up"
+   echo -e "	-U upgrade"
+   echo -e "	-dU distro-upgrade"
+   echo "*****A full upgrade will be performed without any flag*****"
+   exit 1
+fi
+
+echo -e "*****Starting a full Update*****\n\n"
+update
+dUpgrade
+cleanUp
+Done
